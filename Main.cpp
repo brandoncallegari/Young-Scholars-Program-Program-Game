@@ -113,7 +113,7 @@ void scene_b(){
 }
 void scene_c() {
   printlines();
-  cout << "\n\nLocation: Your Room\n\nYou wake up, drenched in sweat. \nIt's a saturday at YSP, and you have no plans.  \nYour roommate, Casey, has already left the room. \nYou get out of bed to see your desk, Casey's desk, your wardrobe and his wardrobe.\n1. Examine your desk\n2. Examine Casey's desk\n3. Examine your wardrobe\n4. Examine Casey's wardrobe\n5. Enter your bathroom\n6. Exit your room" << endl;
+  cout << "\n\nLocation: Your Room\n\nYou wake up, drenched in sweat. \nIt's a saturday at YSP, and you have no plans.  \nYour roommate, Casey, has already left the room. \nYou get out of bed to see your desk, Casey's desk, your wardrobe and Casey's wardrobe.\n1. Examine your desk\n2. Examine Casey's desk\n3. Examine your wardrobe\n4. Examine Casey's wardrobe\n5. Enter your bathroom\n6. Exit your room" << endl;
   int choice_c;
   cin >> choice_c;
   switch (choice_c) {
@@ -227,7 +227,7 @@ void scene_i() {
   printlines();
   bool i_done = false;
   while (i_done == false){
-    cout << "\n\nYou open your door and step out of your room.  You see Kara's room in front of you, a hallway leading to the elevators to your left(south), and a hallway toward the common room to your right (north).  There is a large crowd of people around the common room.\n1. Open Kara's door.\n2. Knock on Kara's door.\n3. Walk south.\n4. Walk north." << endl;
+    cout << "\n\nYou open your door and step out of your room.  You see Kara's room in front of you, a hallway leading to the elevators to your left(south), and a hallway toward the common room to your right (north).  There is a large crowd of people around the common room.\n1. Open Kara's door.\n2. Knock on Kara's door.\n3. Walk south.\n4. Walk north.\n5. Return to your room." << endl;
     int choice_i;
     cin >> choice_i;
     switch (choice_i){
@@ -243,6 +243,9 @@ void scene_i() {
         i_done = true;
         break;
       case 4: scene_k();
+        i_done = true;
+        break;
+        case 5: scene_c;
         i_done = true;
         break;
     }
@@ -670,7 +673,7 @@ void scene_z() {
 
 void scene_za() {
   printlines();
-  cout << "\n\n\nAfter a few seconds, the door creaks open.\n'What do you want?' he asks.\nWhat do you say?\n1. \"Do you know what's going on?\"\n2. Kick Munir in the cast and run into his room\n3. \"Nevermind.\" " << endl;
+  cout << "\n\n\nAfter a few seconds, the door creaks open.\n'What do you want?' Muninr asks.\nWhat do you say?\n1. \"Do you know what's going on?\"\n2. Kick Munir in the cast and run into his room\n3. \"Nevermind.\" " << endl;
   int choice_z;
   cin >> choice_z;
   switch (choice_z) {
@@ -938,7 +941,7 @@ void scene_gg() {
 
 void scene_end() {
   printlines();
-    cout << "\n\nWhen you exit the staircase, you are no longer in southgate.  You are in outer space.  Feeney is not far behind and when you see him emerge behind you, you freeze.  \nFeeney unzips his skin and Mike from Southgate emerges.  \n\nHe begins to grow, and eventually gets so massive that you can't see anything but Mike.  \nHe becomes so large that he implodes and turns into a supermassive black hole.  \nYou are sucked into the vortex, and torn to shreds.\nPress enter to continue." << endl;
+    cout << "\n\nWhen you exit the staircase, you are no longer in southgate.  \nYou feel your nipples harden as you notice the cold emptiness around you. \nYou are in outer space.  \nFeeney is not far behind and when you see him emerge, you freeze.  \nHe unzips his skin and Mike from Southgate emerges.  \nMike begins to laugh maniacally and grow larger and larger. \nHe eventually gets so massive that you can't see anything but Mike.  \nHe becomes so large that he implodes and turns into a supermassive black hole.  \nYou are sucked into the vortex, and torn to shreds.\nPress enter to continue." << endl;
     cin.get();
     cin.get();
     printlines();
